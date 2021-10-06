@@ -1,0 +1,145 @@
+.App {
+  /* text-align: center; */
+  background-color: whitesmoke;
+  min-height:100vh;
+  padding:20px;
+}
+.text {
+  position:absolute;
+  margin-left:80px;
+  margin-top:10px;
+  text-align:left;
+  height:20px;
+  width:150px;
+}
+.icon-small{
+  height:20px;
+  width:20px;
+  color:#fff;
+  background-color:#888;
+  border-radius:10%;
+  text-align:center;
+  vertical-align:middle;
+  padding-top:0px;
+  float:left;
+  margin-right:10px;
+}
+
+.icon-small + p{
+  margin-top:15px;
+  clear:left;
+}
+
+.button{
+  display: inline-block;
+  padding:5px 10px;
+  font-size:10px;
+  cursor:pointer;
+  text-align:center;
+  text-decoration:none;
+  outline:none;
+  border-radius:15px;
+  background-color:white;
+  color:black;
+  border:2px solid grey;
+  transition-duration: 0.3s;
+}
+
+.button:hover{
+  background-color: grey;
+  color:white;
+}
+
+table {
+  border-collapse : collapse;
+  width:100%;
+}
+
+th {
+  background-color:lightslategrey ;
+  color:white;
+  font-size:10px;
+}
+
+td {
+  border-bottom : 1px solid #ddd;
+  font-size:10px;
+}
+
+tr:nth-child(even){
+  background-color: hsl(225, 43%, 81%);
+  color:black;
+}
+
+.App-main{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    font-size: calc(10px+2vmin);
+    color: darkgray;
+    padding:10px;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: lightslategray;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: left; */
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scrollTable{
+  height:450px;
+  overflow-y : auto;
+  overflow-x:auto;
+}
+
+
+@media screen and (min-width:500px){
+.sidebar{
+  float:left;
+  width:69.1489%;
+}
+.content{
+  float:right;
+  width:31.7872%;
+}
+
+.wrapper{
+  margin : 0 auto;
+  grid-template-columns : 1fr 3fr;
+}
+
+.header,.footer{
+  grid-column:1/-1;
+  clear:both;
+}
+
+}
